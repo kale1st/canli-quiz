@@ -580,7 +580,7 @@ function ustCanli(v, sag) {
 }
 function ekCanli() {
   var v = canliV();
-  var sn = '<div class="mono" style="font-size:14px;font-weight:600">SORU ' + (v.soru + 1) + ' / ' + v.toplam + '</div>';
+  var sn = '<div class="satir-g" style="gap:18px"><div class="mono" style="font-size:14px;font-weight:600">SORU ' + (v.soru + 1) + ' / ' + v.toplam + '</div><button class="btn sessiz" style="height:36px;font-size:14px" onclick="bitirOnay()">Yarışmayı bitir</button></div>';
   if (v.durum === 'bekleme') {
     var link = TABAN + '?oda=' + v.kod;
     return ustCanli(v, '<button class="btn sessiz" onclick="iptalOnay()">İptal et</button>') +
